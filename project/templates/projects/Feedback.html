@@ -1,0 +1,116 @@
+{% comment %} {% extends 'index.html' %} {% endcomment %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Customer Feedback Form</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+      </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Tangerine:wght@400;700&display=swap");
+    </style>
+    <link rel="stylesheet" href="{% static 'Feedback.css' %}"> 
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
+      rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="testbox">
+      <form action="/">
+        <h1>Customer Feedback Form</h1>
+        <p><div class="Kk">
+          Please take a few minutes to give us feedback about our service by
+          filling in this short Customer Feedback Form. We are conducting this
+          research in order to measure your level of satisfaction with the
+          quality of our service. We thank you for your participation.
+        </div>
+        </p>
+        <hr />
+        <h3><div class='overall'>Overall experience with our service</div></h3>
+        <table>
+          <tr>
+            <th class="first-col"></th>
+            <th>Excellent</th>
+            <th>Very Good</th>
+            <th>Good</th>
+            <th>Poor</th>
+            <th>Very Poor</th>
+          </tr>
+          <tr>
+            <td class="first-col">
+             <h5> How would you rate your overall experience with our service?</h5>
+            </td>
+            <td><input type="radio" value="none" name="rate" /></td>
+            <td><input type="radio" value="none" name="rate" /></td>
+            <td><input type="radio" value="none" name="rate" /></td>
+            <td><input type="radio" value="none" name="rate" /></td>
+            <td><input type="radio" value="none" name="rate" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">
+              <h5>How satisfied are you with the comprehensiveness of our offer?</h5>
+            </td>
+            <td><input type="radio" value="none" name="satisfied" /></td>
+            <td><input type="radio" value="none" name="satisfied" /></td>
+            <td><input type="radio" value="none" name="satisfied" /></td>
+            <td><input type="radio" value="none" name="satisfied" /></td>
+            <td><input type="radio" value="none" name="satisfied" /></td>
+          </tr>
+          <tr>
+            <td class="first-col"><h5>How would you rate our prices?</h5></td>
+            <td><input type="radio" value="none" name="prices" /></td>
+            <td><input type="radio" value="none" name="prices" /></td>
+            <td><input type="radio" value="none" name="prices" /></td>
+            <td><input type="radio" value="none" name="prices" /></td>
+            <td><input type="radio" value="none" name="prices" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">
+             <h5> How satisfied are you with the timeliness of order delivery?</h5>
+            </td>
+            <td><input type="radio" value="none" name="timeliness" /></td>
+            <td><input type="radio" value="none" name="timeliness" /></td>
+            <td><input type="radio" value="none" name="timeliness" /></td>
+            <td><input type="radio" value="none" name="timeliness" /></td>
+            <td><input type="radio" value="none" name="timeliness" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">
+              <h5>How satisfied are you with the customer support?</h5>
+            </td>
+            <td><input type="radio" value="none" name="name" /></td>
+            <td><input type="radio" value="none" name="name" /></td>
+            <td><input type="radio" value="none" name="name" /></td>
+            <td><input type="radio" value="none" name="name" /></td>
+            <td><input type="radio" value="none" name="name" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">
+              <h5>Would you recommend our product / service to other people?</h5>
+            </td>
+            <td><input type="radio" value="none" name="recommend" /></td>
+            <td><input type="radio" value="none" name="recommend" /></td>
+            <td><input type="radio" value="none" name="recommend" /></td>
+            <td><input type="radio" value="none" name="recommend" /></td>
+            <td><input type="radio" value="none" name="recommend" /></td>
+          </tr>
+        </table>
+        <h4><div class='KKK'>What should we change in order to live up to your expectations?</div></h4>
+        <textarea rows="5"></textarea>
+        <div class='k'><h3>Email</h3></div>
+        <small>Only if you want to hear more from us.</small>
+        <input class="email" type="text" name="name" />
+        <div class="btn-block">
+          <button type="submit" href="/">Send Feedback</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

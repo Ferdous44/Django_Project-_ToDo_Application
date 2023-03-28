@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TO-DO</title>
+    <style>
+      *{
+      padding:0;
+      margin:0;
+      box-sizing:border-box;
+      fornt-family:'Josefin Sans',Sans-serif;
+    }
+    .hero{
+      height:100vh;
+      width:100%;
+      {% comment %} background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/background.jpg); {% endcomment %}
+      background:black;
+      background-size:cover;
+      background-position:center;
+
+     }
+    nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding-top:40px;
+      padding-left:10%;
+      padding-right:10%;
+    }
+    .logo{
+      color:white;
+      font-size:28px;
+    }
+    span{
+      color:#ea1538;
+    }
+    nav ul li{
+      list-style-type: none;
+      display:inline-block;
+      padding:10px 20px;
+    }
+    nav ul li a{
+      color:white;
+      text-decoration:none;
+      font-weight: bold;
+    }
+
+
+    </style>
+  </head>
+  <body>
+    <div class='hero'>
+      <nav>
+        <h2 class="logo">TO-<span>DO</span></h2>
+        <ul>
+          <li><a href='##'>Home</a></li>
+          <li><a href='##'>About</a></li>
+          <li><a href='##'>Searvice</a></li>
+          <li><a href='##'>Protfolio</a></li>
+          <li><a href='##'>Contact us</a></li>
+        </ul>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </nav>
+    </div>
+          
+  </body>
+</html>

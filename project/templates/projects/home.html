@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link>
+        <title>home</title>
+    </head>
+<body>
+    <link rel="stylesheet" href="{% static 'style1.css' %}"> 
+    <link rel="stylesheet" href="{% static 'style.css' %}"> 
+
+    <header>
+        <h2 class="logo"> <a href="{% url 'index' %}">To-Do</h2>
+        <nav class="navigation">
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'about' %}">About</a>
+            <a href='#'>Searvice</a>
+            <a href='#'>contact</a>
+        </nav>
+
+    </header>
+    
+    <div class="slider">
+
+        <span style="--i:1;"><img src="{% static "1.jpg" %}" alt=""></span>
+        <span style="--i:2;"><img src="{% static "2.jpg" %}" alt=""></span>
+        <span style="--i:3;"><img src="{% static "3.jpg" %}" alt=""></span>
+        <span style="--i:4;"><img src="{% static "4.jpg" %}" alt=""></span>
+        <span style="--i:5;"><img src="{% static "5.jpg" %}" alt=""></span>
+        <span style="--i:6;"><img src="{% static "6.jpg" %}" alt=""></span>
+        <span style="--i:7;"><img src="{% static "7.jpg" %}" alt=""></span>
+        <span style="--i:8;"><img src="{% static "8.jpg" %}" alt=""></span>
+
+
+       
+
+
+ 
+</body>
+</html>

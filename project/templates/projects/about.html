@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>About Us Section</title>
+<link rel="stylesheet" href="{% static 'style.css' %}"> 
+
+<link rel="stylesheet" href="{% static 'style2.css' %}"> 
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Pacifico&display=swap');
+  </style>
+</head>
+<body>
+
+    <header>
+        <h2 class="logo" >To-Do</h2>
+        <nav class="navigation">
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'about' %}">About</a>
+            <a href='#'>Searvice</a>
+            <a href='#'>contact</a>
+        </nav>
+
+    </header>
+
+
+    <section class="about">
+        <div class="main">
+            <img src="{% static "15.jpg" %}" alt="">
+            <div class ="about-text">
+                <h1>About Us</h1>
+                <h5>To<span> - Do</span></h5>
+                <p>Google and other Internet search engines
+                     are great tools for researching the basics of 
+                     any subject. However, when conducting research 
+                     for accredited college courses, students need to
+                      find legitimate, trustworthy resources. By now,
+                       you've probably noticed that we love making lists,
+                        especially when it comes to making learning less
+                         expensive (like how we've found online colleges 
+                         that offer laptops to its students). You'll find 
+                         our newest list below. And while it's no substitute 
+                         for a good, old-fashioned trip to the library, 
+                         these sites can help you find reputable articles
+                          and journals to aid in your research</p>
+                          <button type="button">Let's Talk</button>
+                </div>
+            </div>
+</body>
+</html>
