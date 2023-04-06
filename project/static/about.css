@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Carter+One&display=swap');
 * {
+    font-family: 'Carter One', cursive;
     padding: 0;
     margin: 0;
-    font-family: 'Pacifico', cursive;
+    /* font-family: 'Pacifico', cursive; */
     box-sizing: border-box;
+    /* font-family: 'Berkshire Swash', cursive; */
+    /* font-family: 'Carter One', cursive; */
+    font-family: 'Carter One', cursive;
 }
 
 .about {

@@ -1,0 +1,154 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpg" href="./assets/to-do-list.png" />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <script src="https://kit.fontawesome.com/0a9b7b3b75.js" crossorigin="anonymous"></script>
+    <title>To do List</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="{% static 'todo/todo.css' %}"> 
+    
+
+
+  
+    {% comment %} <header>
+      <navbar>
+        <div class="navbar-container">
+          <img src="{% static "todo/todologo.png" %}" alt="todo-list-icon" />
+        </div>
+      </navbar>
+
+      <div class="todo-header-container">
+        <a href="#">
+          <h1>Todo List</h1>
+        </a>
+      </div>
+    </header> {% endcomment %}
+	<header>
+        <h2 class="logo"> <a href="{% url 'index' %}">To-Do</h2>
+        <nav class="navigation">
+            <a href="{% url 'index' %}">Home</a>
+            <a href="{% url 'about' %}">About</a>
+            <a href="{% url 'todo' %}">To-Do_List</a>
+            <a href="{% url 'contact' %}">contact</a>
+            {% comment %} <button class="btnLogin-popup">Login/register</button> {% endcomment %}
+    
+        </nav>
+        <div class="right-col">
+            <p>Click Here TO Listen</p>
+            <img src="{% static "play.png" %}" id="icon">
+    
+        </div>
+        <audio id="mySong">
+            <source src="{% static "music.mp3" %}" type="audio/mp3">
+        </audio>
+    <script>
+    var mySong = document.getElementById("mySong");
+    var icon = document.getElementById("icon");
+    
+    icon.onclick = function() {
+        if(mySong.paused){
+            mySong.play();
+            icon.src="{% static "pause.png" %}";
+        }else{
+            mySong.pause();
+            icon.src="{% static "play.png" %}";
+        
+        }
+    }
+    </script>
+    <style>
+    .right-col {
+        float: right;
+        margin-right: 6%;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .right-col p {
+        font-size: 18px;
+        color: rgb(255, 208, 208);
+        font-weight: 400;
+        margin-right: 15px;
+    }
+    
+    #icon {
+        width: 80px;
+        cursor: pointer;
+    }
+    </style>
+
+
+   
+    <main>
+      <div class="todo-container">
+        <section class="todo-input-field">
+          <div class="to-do-description-container add-todo-input">
+            <input type="text"
+              class="to-do-description "
+              placeholder="Type your todo list"
+            ></input>
+
+            <div class="todo-icon">
+              <img src="{% static "todo/txticon.png" %}" />
+            </div>
+            
+            <button class="todo-button" type="submit">
+            <i class="fa-solid fa-square-plus fa-3x add-button"></i>
+            </button>
+
+          </div>
+              <div class="controls">
+                <div class="filters">
+                  <span id="all" class="active">All</span>
+                  <span id="pending">Pending</span>
+                  <span id="completed">Completed</span>
+                </div>
+                <button class="clear-btn">Clear All</button>
+              </div>    
+        </section>
+
+        <div class="todolist-container">
+          <ul class="todolist"></ul>
+        </div>
+      </div>
+      <section class="task-status">
+      <div class="task-stats-container">
+          <div class="todo-stats">
+            <div class="total-tasks">
+              <p class="total-task-title">
+                Total Tasks
+              </p> 
+              <div class="task-count-container">
+              <span class="total-count">0</span>
+              </div>
+            </div>
+            <div class="completed-tasks">
+              <p class="completed-task-title">
+                Completed Tasks 
+              </p>
+              <div class="task-count-container">
+                <span class="completed-count">0</span>
+              </div>
+            </div>
+            <div class="remaining-tasks">
+              <p class="remaining-task-title">
+                Remaining Tasks
+              </p>
+              <div class="task-count-container">
+                <span class="remaining-count">0</span>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section> 
+    </main>
+    <script src="{% static 'todo/todo.js' %}"></script>
+  </body>
+</html>

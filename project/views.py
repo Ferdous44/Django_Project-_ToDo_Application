@@ -69,3 +69,9 @@ def home(request):
 
 def about(request):
     return render(request,'projects/about.html')
+
+def todo(request):
+    return render(request,'projects/todo.html')
+
+def contact(request):
+    return render(request,'projects/contact.html')
